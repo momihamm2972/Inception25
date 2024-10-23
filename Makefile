@@ -4,7 +4,7 @@ all:
 	docker-compose -f $(SRC_DIR) up --build
 
 stop:
-	docker-compose stop
+	docker-compose -f $(SRC_DIR) stop
 
 clean-containers-volumes:
 	docker system prune -af
